@@ -1,0 +1,81 @@
+---
+title: 'Learning React with Udacity - React Fundamentals'
+date: '2017-09-03T00:00:00.0000'
+layout: post
+draft: false
+path: '/posts/react-learning-notes-react-fundamentals'
+category: 'Blog'
+tags:
+  - 'React'
+  - 'ReactJS'
+  - 'Udacity'
+  - 'Notes'
+description: 'My journey and course notes on my first module; React Fundamentals from the Udacity React Nanodegree'
+featuredImage: './react-logo.png'
+---
+
+As a designer who is learning React, I thought it would be beneficial both to myself as well as to others, to document my journey as I delve into something new. In the coming months, I will be sharing my notes and struggles as I complete this Nanodegree. I have no idea what I can expect from this course, but having seen some cool stuff made with React I am excited to see what I learn.
+
+##React Core Concepts
+###Composing Components is Cool
+Composition makes total sense. Combine simple functions to create complex functions. This practice leads to better quality, more readable and reusable code, which is a very good thing. Looking back at some of my old monolithic blocks of jQuery, I have many bad habits to unlearn. I've just got to remember the DOT (Do One Thing) rule when writing functions.
+
+###Declarative vs Imperative Code
+TIL: Almost all of my previous coding attempts have been imperative.
+Tyler McGinnis has a pretty good write-up on [declarative vs imperative programming](https://tylermcginnis.com/imperative-vs-declarative-programming/)
+
+That article has a great example of imperative vs declarative.
+Imperative: A manual/stick shift car
+Declarative: An automatic car
+The automatic (declarative) example abstracts the selecting of gears, you just put it into drive and go.
+
+With declarative programming, you 'declare' WHAT you want it to do, whereas imperative programming is more concerned with HOW you want it done. React is declarative which is going to be new for me.
+
+###The One Way Street of Data Flow
+Data in React always flows from parent to child. The way data flows down to children feels a little like CSS, where children inherit styles from their parent element. To make any updates you would have to update the parent component which then sends the updated data back down to the child component. As confusing as it sounds to explain, the concept is easy to work with since there is one rule "Send data updates to the parent component." There is only one place to manage the data, meaning there is a single source of truth and the data can be found where you would expect it to be.
+
+###React is Just Javascript
+Who knew? I guess this means I should prime myself on some javascript. Thankfully, Udacity has some [free courses](https://udacity.com/course/intro-to-javascript--ud803) to get me up to speed.
+
+##Rendering UI
+###Making React Elements
+A react element is a hook for the React virtual DOM node. It is the point of entry for all of the React fancy magic stuff. If I wanted to make a 100% React app, I would only need to create a single React element.
+
+###What is all This Talk of JSX?
+After a little digging to get my head around JSX is a way to differentiate from traditional Javascript files (which don't contain any HTML or UI). In short, JS files contain pure JavaScript, where JSX files contain Javascript and HTML. According to the React Docs:
+"React doesn’t require using JSX, but most people find it helpful as a visual aid when working with UI inside the JavaScript code. It also allows React to show more useful error and warning messages."
+
+###Making Components
+Components are what we use to construct the UI, now we're talking my language! Each component is a reusable module which you can pass properties (props). They return HTML via a Render method. As always 'return' can only return a single 'thing'. If your component's render method contains multiple elements, you're going to need to encapsulate them (using a container div), or it'll throw an error.
+
+###Setting Up React
+Facebook has made this step pretty easy, just got to install create-react-app from node package manager. This process was relatively painless.
+
+##Managing State
+###Passing Data with this.props
+To pass data to a child component, you add the data as a prop. The prop can be accessed from the "this.props." object. I had a bit of a play with this and I found that it is a very tidy approach.
+
+###Stateless Functional Components
+If your component doesn't need to keep track of its internal state, it can just be a 'normal' Javascript function with the props as parameters. Initially, I thought that everything needed to have a state and a render method, but this is a tidy way to handle situations where none of that is necessary.
+
+###Components with State
+All components can receive props from their parent. However, props are read-only where a component's state is mutable (read and writable). State updates in React invoke a re-render of the component. In my understanding, React notices there is a change of state and then goes to figure out what has changed. It then updates the DOM with just the bits that have changed. It is a pretty efficient way to do things when you consider a traditional page would refresh the entire page for a single change.
+
+###Controlled Components
+Controlled components were a bit more tricky and took a while for the concept to click, but they are pretty straightforward now I understand what is happening. If you are planning on having any form fields in any of your projects, you are going to need to understand how controlled components work.
+
+Say you have a component like a text input field with a value attribute. Traditionally you would type in the input field, and the value attribute would reflect whatever you typed. Since React manages all aspects of the view and only updates when a change of state is detected, a non-controlled input field would remain empty as you type since React hasn't detected any change of state.
+
+The content of the input field's value attribute has to be updated by the local state. If you updated the component's state on every keypress, the state would update the state. This triggers a re-render, and the value attribute would update with the new content.
+
+That was a lot of state updating! if you need a more precise explanation, you can find it [here](https://www.youtube.com/watch?v=z_OpiP_b6HY)
+
+##React Event Lifecycle
+###React Lifecycle Methods, or 'Why is my component not updating'?
+I found lifecycle methods a real challenge to understand. I am still coming to grips with the concept. As I become more versed I am starting to feel more confident when choosing the right method on the first go. In essence, you'll want your components to be doing different things at different points in their lifecycle. Since the render method is purely concerned with returning UI, the component's logic lives inside the lifecycle methods. There are a handful of methods that make up the component lifecycle, and of those you are commonly going to use a few. I think I would struggle to give this the explanation it needs, so check out [this post](https://engineering.musefind.com/react-lifecycle-methods-how-and-when-to-use-them-2111a1b692b1) for more
+
+###Navigating Pages with React Router
+As we already know React hooks itself to the browser's DOM using React.createElement. When you use the browsers navigational functions (back, forward, address bar, stop), the browser performs your request, often refreshing the browser tab in the process. A browser refresh is a big no-no for React as it would end up breaking your connection to the DOM. React Router works to emulate the process of navigating pages, like a virtual nav. When configured correctly you can navigate as you would with a traditional website, with the website URL updating as you traverse 'pages' on your application. Having built single page websites before it is pretty annoying to find anything or share content. React Router fixes that issue in a very tidy way.
+
+##Summary
+So far I have spent just over 5 weeks working 4 nights a week learning React. For a designer, there has been a load of technical information to digest. I'm interested to see how much of this new information is going to stick. I'm very excited to start working on the first assignment. I'm interested to see how much of the information has stuck although I already know I have to elevate my understanding of Javascript, especially ES6 (all of those arrows and brackets!). Here's to the many late nights ahead!

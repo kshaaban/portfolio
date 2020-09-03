@@ -1,0 +1,43 @@
+---
+title: 'Learning React with Udacity - React & Redux'
+date: '2017-10-28T00:00:00.0000'
+layout: post
+draft: false
+path: '/posts/react-learning-notes-react-redux'
+category: 'Blog'
+tags:
+  - 'React'
+  - 'ReactJS'
+  - 'Redux'
+  - 'Udacity'
+  - 'Notes'
+description: 'React and Redux module course notes and comments from the Udacity ReactJS Redux and React Native Nanodegree'
+featuredImage: './react-redux-logo.jpg'
+---
+
+##What is redux?
+As your React app begins to grow, you might find it challenging to keep track of all of the state changes each of your components. What do you do when two components need to share the same state? One solution would be to hold that state in the parent component, however that can get very messy when you want to add new components in the future that might not share the same parent.
+
+Redux looks to address these issues through the use of a global state (known as the store), accessible from anywhere in your app. The store allows your app to have a single source of truth, further simplifying how you manage state, making data in your app more predictable. The Redux store is immutable, meaning it is read-only. Components must request for the store to update. As with everything React, Redux uses a unidirectional data flow. An action is used to notify Redux that your app requires a change in state.
+
+##What are Redux Actions?
+
+Actions are kind of like the Redux equivalent to browser event listeners. An action is a javascript object that describes an event that should update the state of the app. Actions require a type property which communicates which ‘type’ of action occurred. The action object includes additional data that is necessary to update the state.
+Action creators are functions which contain an action, allowing you to call your function and pass additional parameters into it. Actions get dispatched to the store where reducers specify how the state changes.
+
+##What is a Reducer?
+Actions describe what happened, reducers describe how the state should change. A reducer is a function which decides how to transform the current state into a new state. To ensure predictable output reducers are pure, meaning they always return the same result when passing the same arguments. Reducers should return to the store an updated state or the old state.
+
+##The Redux Store
+A store holds the whole state tree of your application. It is useful for situations where many components share the same state. In certain circumstances, it makes sense to use the local (component) state rather than using the Redux store. For example, a controlled component such as form input fields would update the local state on every keystroke. It is hard to justify why you would want to update the store for that. That said, there is no hard and fast rule for what you should save. It’s up to you how you choose to organise the state.
+
+##Enhancing Redux with Middleware
+My understanding of Middleware is a little murky. The redux docs define middleware as "a third-party extension point between dispatching an action, and the moment it reaches the reducer." Middleware intercepts dispatched actions and allow you to perform operations on the data before they reach the reducer. In this course, I have used middleware to log actions out to the console using redux-logger and for Thunk.
+
+##Redux-Thunk
+From their GitHub, "Redux Thunk middleware allows you to write action creators that return a function instead of an action." Thunk is useful in situations where you would want to support asynchronous data flow such as server interaction. Thunk lets you write action creators that return functions instead of objects, allowing greater flexibility before dispatching your action to a reducer.
+
+##Summary
+The MyReads app was my first app built using React. Even for a small app I often found it challenging to manage the state. Continuously passing props down to components became tedious and confusing at times. If the application grew, it's easy to see how tangled things could get. A real-life example might be where multiple developers are working on components, which all pass props to each other.
+
+Redux seems like a very fitting solution for keeping only the most relevant elements of state in a globally accessible store. Initially, I faced some challenges with understanding actions, action creators and reducers. Adding middleware to the mix created more confusion. The Redux Dev Tools gave me clear feedback to help improve my understanding by seeing how data in the store changes.

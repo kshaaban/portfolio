@@ -1,0 +1,54 @@
+---
+title: 'As a Designer I learned to code, and you should too'
+date: '2017-10-28T00:00:00.0000'
+layout: post
+draft: false
+path: '/posts/why-designers-should-learn-to-code'
+category: 'Blog'
+tags:
+  - 'Design'
+  - 'React'
+description: 'Why learning to code will make you a better problem solver, collaborator and communicator.'
+featuredImage: './react-logo.png'
+---
+
+_To the bemusement of many of my designer friends, I have been learning Javascript and ReactJS in my spare time. Some friends have suggested I become a "Full-Stack Designer" or go full-time as a React developer. Fascinated by these responses, I decided to write a post on why I learned to code and why you should too._
+
+There has been an ongoing discussion in the tech industry over whether or not designers should learn to code. Google is awash with articles on why designers should and shouldn't code, while it seems the norm for design job listings to list coding experience as a 'nice to have'. A developer is never required to have design skills, so why should designers learn to code? With design being a continually evolving discipline, why should a highly-skilled designer with enough to contend with want to pick up yet another skill?
+
+##Delivering Clarity
+Most design teams are likely to have a defined workflow for how they hand over their designs to their developers. With each project comes varying delivery requirements, causing some handovers to be less smooth than you may like. Some common reasons for turbulence during a hand over can be:
+
+Inability to realise your design vision - "We can't do this in the time allocated."
+Lack of detail surrounding edge conditions (onboarding, empty, error) - "what should happen when...?"
+Fall outside of a device's capabilities - "... The device doesn't support this."
+
+With ever-increasing user interactivity, simple flat designs and write-ups lack sufficient detail to communicate ideas effectively. Prototyping tools have been built to bridge this gap, with numerous software packages and plugins offering developers a more detailed source of reference. These tools provide designers with the ability to directly communicate with the design team during any stage of the design and development processes.
+
+Any new addition to a workflow requires time to learn and implement. In this case, this investment is necessary for both the design and development teams, a costly process. Buying into an off the shelf solution involves considerable research and planning; what happens if the tool you have chosen decides to put their prices up, or drops a feature which you have relied upon, or perhaps pivots to meet the needs of a different audience? In comparison, programming languages have strict standards and release cycles which make them less prone to these concerns. Your dev team are already up to speed with what you're learning, so you'll have a wealth of experience to go to if you get stuck.
+
+##Save time, Reduce Costs
+To a developer, your design deliverables should read like a LEGO construction manual. Easy-to-follow and straightforward, with the exact number of pieces. This avoids confusion and misinterpretation, which can manifest into costly mistakes and missed deadlines. This avoidable situation can often be the source of UX anti-patterns, causing your users asking “Why have they designed and built it in this way?”.
+Your design language might not translate as well as you require. A coded prototype gives the developer a much richer view of your expectations.
+
+I am a huge advocate of the "use whatever works" approach. Time saved equals money saved, so choosing the right medium to get your idea across is vital. If a simple 5-minute sketch to reorganise some layout elements should be sufficient for a developer to run with, that's great. Coded prototypes sit on the other end of this scale and therefore should be used sparingly and in situations where a coded example seems fitting. Try to be strict with your allocation of time on them and avoid the desire to polish your prototype, getting the idea across promptly is the aim here.
+
+##Building a stronger team
+Learning to code makes for more fluid conversations with your dev team. You can bring your ideas to life; showing how you want something to work. Your designs which developers once exclaimed were 'not doable' become achievable. The Designer-Developer divide begins to close, and you experience much less push-back. The teams start understanding each other's languages. Anything that improves communication is undoubtedly a good idea. You might not speak with such a broad vocabulary yet, but the key takeaway to remember is that great designers and developers work together while learning from each other, setting the foundation for great collaboration which yields a fantastic user experience.
+
+##So where can I get started?
+Here are a few free and paid resources to help get you started. Some might be better suited for you based on how you learn. I would suggest you free up a couple of hours to get started.
+
+##Learning:
+[https://www.codecademy.com/](https://www.codecademy.com/)  
+[https://www.freecodecamp.org/](https://www.freecodecamp.org/)  
+[https://teamtreehouse.com/](https://teamtreehouse.com/)  
+[https://www.w3schools.com/](https://www.w3schools.com/)  
+[https://www.pluralsight.com/codeschool](https://www.pluralsight.com/codeschool)  
+[https://udacity.com/](https://udacity.com/)
+
+##Finding answers:
+[https://stackoverflow.com/](https://stackoverflow.com/)  
+Developer Slack Channels  
+Developer subreddits  
+Your company's dev team
