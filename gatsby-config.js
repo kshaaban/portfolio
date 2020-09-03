@@ -6,9 +6,16 @@ const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE
 
 module.exports = {
   siteMetadata: {
-    siteTitleAlt: `Minimal Blog - Gatsby Theme`,
+    siteTitleAlt: `Khaled Shaaban - London based Senior Product Designer: UI / UX Specialist`,
   },
   plugins: [
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+      },
+    },
     {
       resolve: `@lekoarts/gatsby-theme-minimal-blog`,
       // See the theme's README for all available options
@@ -25,12 +32,8 @@ module.exports = {
         ],
         externalLinks: [
           {
-            name: `Twitter`,
-            url: `https://twitter.com/lekoarts_de`,
-          },
-          {
-            name: `Instagram`,
-            url: `https://www.instagram.com/lekoarts.de/`,
+            name: `LinkedIn`,
+            url: `https://www.linkedin.com/in/kshaaban/`,
           },
         ],
       },
@@ -45,12 +48,12 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `minimal-blog - @lekoarts/gatsby-theme-minimal-blog`,
-        short_name: `minimal-blog`,
-        description: `Typography driven, feature-rich blogging theme with minimal aesthetics. Includes tags/categories support and extensive features for code blocks such as live preview, line numbers, and code highlighting.`,
+        name: `Khaled Shaaban - London based Senior Product Designer: UI / UX Specialist`,
+        short_name: `Khaled Shaaban`,
+        description: `Senior Product Designer specialising in UI / UX for React and React Native, London UK`,
         start_url: `/`,
-        background_color: `#fff`,
-        theme_color: `#6B46C1`,
+        background_color: process.env.{BACKGROUND_COLOR},
+        theme_color: process.env.{THEME_COLOR},
         display: `standalone`,
         icons: [
           {
