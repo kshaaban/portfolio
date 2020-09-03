@@ -1,8 +1,8 @@
 require(`dotenv`).config({
   path: `.env`,
-})
+});
 
-const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE
+const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE;
 
 module.exports = {
   siteMetadata: {
@@ -23,8 +23,8 @@ module.exports = {
       options: {
         navigation: [
           {
-            title: `Blog`,
-            slug: `/blog`,
+            title: `Posts`,
+            slug: `/posts`,
           },
           {
             title: `About`,
@@ -53,8 +53,8 @@ module.exports = {
         short_name: `Khaled Shaaban`,
         description: `Senior Product Designer specialising in UI / UX for React and React Native, London UK`,
         start_url: `/`,
-        background_color: process.env.{BACKGROUND_COLOR},
-        theme_color: process.env.{THEME_COLOR},
+        background_color: "#FFFFFF",
+        theme_color: "#3d9bb5",
         display: `standalone`,
         icons: [
           {
@@ -81,4 +81,4 @@ module.exports = {
       },
     },
   ].filter(Boolean),
-}
+};
