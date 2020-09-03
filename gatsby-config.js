@@ -6,6 +6,7 @@ const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE;
 
 module.exports = {
   siteMetadata: {
+    siteTitle: `Khaled Shaaban`,
     siteTitleAlt: `Khaled Shaaban - London based Senior Product Designer: UI / UX Specialist`,
   },
   plugins: [
@@ -23,18 +24,26 @@ module.exports = {
       options: {
         navigation: [
           {
-            title: `Posts`,
-            slug: `/posts`,
-          },
-          {
             title: `About`,
             slug: `/about`,
+          },
+          {
+            title: `Projects`,
+            slug: `/projects`,
+          },
+          {
+            title: `Blog`,
+            slug: `/blog`,
           },
         ],
         externalLinks: [
           {
             name: `LinkedIn`,
             url: `https://www.linkedin.com/in/kshaaban/`,
+          },
+          {
+            name: `Email`,
+            url: `mailto:hey@khaledshaaban.com`,
           },
         ],
       },
