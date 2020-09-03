@@ -1,17 +1,17 @@
 ---
-title: 'Learning React with Udacity - React Fundamentals'
-date: '2017-09-03T00:00:00.0000'
+title: "Learning React with Udacity - React Fundamentals"
+date: "2017-09-03T00:00:00.0000"
 layout: post
 draft: false
-path: '/posts/react-learning-notes-react-fundamentals'
-category: 'Blog'
+slug: "/react-learning-notes-react-fundamentals"
+category: "Blog"
 tags:
-  - 'React'
-  - 'ReactJS'
-  - 'Udacity'
-  - 'Notes'
-description: 'My journey and course notes on my first module; React Fundamentals from the Udacity React Nanodegree'
-featuredImage: './react-logo.png'
+  - "React"
+  - "ReactJS"
+  - "Udacity"
+  - "Notes"
+description: "My journey and course notes on my first module; React Fundamentals from the Udacity React Nanodegree"
+featuredImage: "./react-logo.png"
 ---
 
 As a designer who is learning React, I thought it would be beneficial both to myself as well as to others, to document my journey as I delve into something new. In the coming months, I will be sharing my notes and struggles as I complete this Nanodegree. I have no idea what I can expect from this course, but having seen some cool stuff made with React I am excited to see what I learn.

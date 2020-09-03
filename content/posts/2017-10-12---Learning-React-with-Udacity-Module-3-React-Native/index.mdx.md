@@ -1,18 +1,18 @@
 ---
-title: 'Learning React with Udacity - React Native'
-date: '2017-12-10T00:00:00.0000'
+title: "Learning React with Udacity - React Native"
+date: "2017-12-10T00:00:00.0000"
 layout: post
 draft: false
-path: '/posts/react-learning-notes-react-native'
-category: 'Blog'
+slug: "/react-learning-notes-react-native"
+category: "Blog"
 tags:
-  - 'React'
-  - 'React Native'
-  - 'App'
-  - 'Udacity'
-  - 'notes'
-description: 'Course notes on my final module from the Udacity ReactJS Redux and React Native Nanodegree.'
-featuredImage: './react-logo.png'
+  - "React"
+  - "React Native"
+  - "App"
+  - "Udacity"
+  - "notes"
+description: "Course notes on my final module from the Udacity ReactJS Redux and React Native Nanodegree."
+featuredImage: "./react-logo.png"
 ---
 
 ##What is React Native?
